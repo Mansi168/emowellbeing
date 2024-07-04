@@ -4,3 +4,5 @@ scikit-learn
 altair>=4.0
 google-generativeai
 python-dotenv
+streamlit_lottie
+streamlit-extras

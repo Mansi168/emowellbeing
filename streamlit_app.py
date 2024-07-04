@@ -1,8 +1,3 @@
-from dotenv import load_dotenv
-
-load_dotenv()  # take environment variables from .env.
-
-import streamlit as st
 import os
 import pathlib
 import textwrap
@@ -41,25 +36,21 @@ st.markdown(
         transition-duration: 0.4s;
         cursor: pointer;
     }
-
     .stButton button:hover {
         background-color: white; 
         color: black; 
         border: 2px solid #4CAF50;
     }
-
     .response-container {
         background: #f0f2f6;
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
-
     .header-title {
         font-family: 'Arial Black', sans-serif;
         color: #333;
     }
-
     .instruction-text {
         font-style: italic;
         color: #555;
@@ -88,7 +79,7 @@ if submit:
             st.write(chunk.text)
             st.markdown("<hr>", unsafe_allow_html=True)
         st.markdown("</div>", unsafe_allow_html=True)
-    
+
     st.write("**Chat History**")
     st.write(chat.history)
 
